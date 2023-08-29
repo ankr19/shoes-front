@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>Online Shoes Store</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,9 +24,11 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </Head>
+      <body>
       <Header />
-      <body>{children}</body>
+        {children}
       <Footer />
-    </>
+        </body>
+    </html>
   );
 }
